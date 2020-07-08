@@ -34,37 +34,48 @@ public class NumbersTest {
     @Test
     public void squaresTest(){
         //: Given
-
+        Numbers number = new Numbers();
+        String expected = "149162536496481100";
         //: When
-
+        String actual = number.squares();
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void random4Test(){
         //: Given
-
+        Numbers number = new Numbers();
+        String expected = "6472";
         //: When
-
+        String actual = number.random4();
         //: Then
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void evenTest(){
         //: Given
-
+        Numbers number = new Numbers();
+        String Expected="2468101214161820";
         //: When
-
+        String Actual = number.even(20);
         //: Then
+
+        Assert.assertEquals(Expected, Actual);
     }
 
     @Test
     public void powersTest(){
         //: Given
-
+        Numbers number = new Numbers();
+        String Expected="248163264128";
+        
         //: When
+        String Actual = number.powers(7);
 
         //: Then
+        Assert.assertEquals(Expected, Actual);
     }
 
 }
